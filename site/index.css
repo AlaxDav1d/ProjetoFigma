@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    background-color: #8a2be2;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    height: 5vh;
+
+}
+select{
+    color: #8a2be2;
+    width: 200px;
+}
+section{
+    background-color: black;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+}
+.secondSection{
+    display: flex;
+    justify-content: center;
+}
+.news{
+    width: 70vh;
+    height: 40vh;
+    background-color: #fff;
+}
+.thirdSection{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8a2be2;
+}
+.thirdSection form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 20vh;
+    width: 25vh;
+}
+.thirdSection form>input{
+    background-color: #808080;
+    margin: 10px;
+}
+.conts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    padding: 20px;
+    background-color: #fff;
+    height: 20vh;
+}
+footer{
+    background-color: #fff;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
