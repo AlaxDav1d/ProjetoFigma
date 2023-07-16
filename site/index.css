@@ -23,11 +23,37 @@ footer{
     justify-content: center;
 }
 select{
+    background-color: #8a2be2;
+    color: #fff;
+    width: 20vh;
+    margin: 2px;
+    border-radius: 20px;
+}
+option{
+    background-color: #fff;
     color: #8a2be2;
-    width: 200px;
 }
 section{
     background-color: black;
+}
+
+.formulario>h3{
+    width: 25vh;
+    color: #bd0202;
+    font-size: 25px;
+    text-shadow: 0px 1px #000;
+    transition: 600ms;
+}
+
+.logo{
+    display: flex;
+    margin: 0 10vh;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 2px black;
+}
+.logo img{
+    width: 5%;
 }
 .searchBar{
     display: flex;
@@ -59,8 +85,47 @@ section{
     flex-direction: column;
     justify-content: center;
 }
-.thirdSection{
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    gap: 5px;
+}
+.conts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    gap: 50px;
+    padding: 20px;
+    background-color: #000;
     height: 60vh;
+}
+.conts>h3{
+    /*line-height faz o que ta escrito no nome,define a altura da linha*/
+    color: #bd0202;
+    width: 30vh;
+    text-shadow: 0px 0.5px #8a2be2;
+    text-indent: 10px;
+}
+.imgsConts{
+    display: flex;
+    flex-direction: column;
+}
+.imgsConts img{
+    width: 15%;
+}
+.textConts{
+    color: #8a2be2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    text-shadow: 0px 0.5px #7e0404;
+}
+.thirdSection{
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,32 +134,58 @@ section{
 .thirdSection form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     padding: 20px;
+    background-color: #000;
+    color: #8a2be2;
+    text-shadow: 0px 0.5px #7e0404;
+    height: 60vh;
+    width: 50vh;
+    border-radius: 20px;
+}
+form>h2{
+    align-self: center;
+    margin-bottom: 3vh;
+    color: #bd0202;
+    text-shadow: 0px 0.5px #8a2be2;
+}
+label>span{
+    color: #bd0202;
+}
+.thirdSection input{
     background-color: #fff;
-    height: 20vh;
-    width: 25vh;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 30vh;
+    margin: 1px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
-.thirdSection form>input{
-    background-color: #808080;
-    margin: 10px;
-}
-.conts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25vh;
-    padding: 20px;
+input:focus{
     background-color: #fff;
-    height: 20vh;
+    color: #000;
 }
-.logo{
+
+.formulario{
     display: flex;
-    margin: 0 10vh;
     align-items: center;
+    gap: 10px;
 }
-.logo img{
-    width: 5%;
+input[type="submit"]{
+    background-color: #bd0202;
+    align-self: center;
+    width: 10vh;
+    transition: 600ms;
+}
+input[type="submit"]:hover{
+    background-color: #7e0404;
+    color: #8a2be2;
+}
+#tel{
+    border: 2.5px solid #fff;
+    border-radius: 30px;
+    padding: 6px;
 }

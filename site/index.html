@@ -19,22 +19,23 @@
     </header>
     <nav>
         <select>
-            <option value="carro">carro1</option>
+            <option value="carro">Flores</option>
+            <option value="carro">Orquideas</option>
+            <option value="carro">Rosas</option>
+            <option value="carro">Margaridas</option>
+        </select>
+        <select>
+            <option value="carro">Adubos</option>
             <option value="carro">carro2</option>
             <option value="carro">carro3</option>
             <option value="carro">carro4</option>
         </select>
         <select>
-            <option value="carro">carro1</option>
-            <option value="carro">carro2</option>
-            <option value="carro">carro3</option>
-            <option value="carro">carro4</option>
-        </select>
-        <select>
-            <option value="carro">carro1</option>
-            <option value="carro">carro2</option>
-            <option value="carro">carro3</option>
-            <option value="carro">carro4</option>
+            <option value="carro">Vasos</option>
+            <option value="carro">Barro</option>
+            <option value="carro">Plastico</option>
+            <option value="carro">Grande</option>
+            <option value="carro">Pequeno</option>
         </select>
 
         <!--a classe??? ROLE serve para definir alterara a função de uma tag-->
@@ -55,16 +56,49 @@
         </div>
     </div>
     <div class="thirdSection">
-        <form action="">
-            <h2>Formulario</h2>
-            <input type="text" >
-            <input type="text">
-            <input type="text">
-        </form>
+        <div class="formulario">
+            <form action="">
+                <h2>Formulario</h2>
+                <div class="inputs">
+                    <label for="name">Nome: <span>*</span> </label>
+                    <input type="text" required>
+                </div>
+
+                <div class="inputs">
+                    <label for="telefone">Telefone: <span>*</span> </label>
+                    <input type="tel">
+                </div>
+
+                <div class="inputs">
+                    <label for="Email">Email: <span>*</span> </label>
+                    <input type="email" required>
+                </div>
+                <div class="inputs">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            <h3>
+                Se inscrevendo aqui na FlowLife,você terá acesso as nossas promoções mais rapidamente sem necessidade de entrar no site,enviaremos elas diretamente no seu E-mail ou por WhatsApp se preferir 
+            </h3>
+        </div>
         <div class="conts">
-            <h3>Telefone</h3>
-            <h3>Celular</h3>
-            <h3>Email</h3>
+            <h3>Aqui você tera acesso a alguns dos nossos contatos</h3>
+            <div class="imgsConts">
+                <div class="textConts">
+                    <img src="/imgs/email.png" alt="icone de email">
+                    <p>Email:Sla123456@gmail.com</p>
+                </div>
+                <div class="textConts">
+                    <img src="/imgs/Instagram_logo.png" alt="logo instagram">
+                    <p>@Flow_Life</p>
+                </div>
+                <div class="textConts">
+                    <img src="/imgs/telephone-logo.png" alt="icone de telefone" id="tel">
+                    <p>11942403004</p>
+                </div>
+                
+                
+            </div>
         </div>
     </div>
     <footer>
