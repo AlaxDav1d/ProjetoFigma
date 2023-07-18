@@ -33,10 +33,25 @@ option{
     background-color: #fff;
     color: #8a2be2;
 }
-section{
-    background-color: black;
-}
 
+button{
+    width: 2vh;
+    background-color: #4deb18;
+    height: 4vh;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+}
+.car{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+}
 .formulario>h3{
     width: 25vh;
     color: #bd0202;
@@ -66,10 +81,12 @@ section{
     width: 10%;
 }
 .carousel{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    width: 50vh;
     height: 30vh;
+    opacity: 0;
+}
+.carousel img{
+    width: 80%;
 }
 .secondSection{
     display: flex;
@@ -108,6 +125,9 @@ section{
     padding: 20px;
     background-color: #000;
     height: 60vh;
+}
+.aparece{
+    opacity: 1;
 }
 .conts>h3{
     /*line-height faz o que ta escrito no nome,define a altura da linha*/
@@ -175,7 +195,6 @@ input:focus{
     background-color: #fff;
     color: #000;
 }
-
 .formulario{
     display: flex;
     align-items: center;

@@ -42,11 +42,13 @@
   
     </nav>
     <section>
-        <div class="carousel">
-            <img src="../imgs/flowers-g9fd8ac0e8_1280.jpg" alt="produto1">
-            <img src="../imgs/marguerite-g53ad695fb_1280.jpg" alt="produto2">
-            <img src="../imgs/rose-g34c621dce_1280.jpg" alt="produto3">
-        </div>
+        <button onclick="atras()"></button>
+        <div class="car" id="carousel">
+                <img src="../imgs/flowers-g9fd8ac0e8_1280.jpg" alt="produto1" class="carousel aparece" >
+                <img src="../imgs/marguerite-g53ad695fb_1280.jpg" alt="produto2" class="carousel">
+                <img src="../imgs/rose-g34c621dce_1280.jpg" alt="produto3" class="carousel">
+            </div>
+            <button onclick="frente()"></button>
     </section>
     <div class="secondSection">
         <div class="news">
@@ -105,4 +107,35 @@
         <p>Desenvolvido por AlaxDav1d</p>
     </footer>
 </body>
+<script>
+    var car = document.querySelectorAll('.carousel')
+    let posicaoAtual = 0;
+
+    function retira(){
+        car.forEach(item => item.classList.remove('aparece') ) 
+    }
+    function add(){
+        car[posicaoAtual].classList.add('aparece')
+    }
+    function frente(){
+        retira()
+        if(posicaoAtual == car.length - 1){            
+            posicaoAtual = 0
+        }
+        else{
+            posicaoAtual++
+        }
+        add()
+    }
+    function atras(){
+        retira()
+        if(posicaoAtual === 0){
+            posicaoAtual = car.length-1
+        }
+        else{
+            posicaoAtual--
+        }
+        add()
+    }
+</script>
 </html>
